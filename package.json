@@ -1,0 +1,24 @@
+{
+  "name": "quran-hifz",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "prepare:quran": "node scripts/prepare-quran.mjs",
+    "validate:quran": "node scripts/validate-navigation.mjs",
+    "validate:navigation": "node scripts/validate-navigation.mjs",
+    "qa": "node scripts/final-qa.mjs",
+    "release:gate": "node scripts/release-gate.mjs",
+    "prepare:kfgqpc": "node scripts/prepare-kfgqpc.mjs",
+    "prepare:qcf4": "node scripts/fetch-qcf4-source.mjs",
+    "validate:qcf4": "node scripts/validate-qcf4-manifest.mjs"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/core": "^7.4.3",
+    "@capacitor/cli": "^7.4.3",
+    "vite": "^7.1.0",
+    "@capacitor/local-notifications": "^7.0.0"
+  }
+}
