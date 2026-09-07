@@ -1,0 +1,9 @@
+{
+  "name": "Quran Hifz",
+  "short_name": "Quran Hifz",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f3ea",
+  "theme_color": "#0f2c3f",
+  "lang": "az"
+}
