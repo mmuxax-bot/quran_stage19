@@ -30,9 +30,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Setup Android Platform
+      - name: Generate Android Project
         run: |
-          npx cap add android || true
+          rm -rf android
+          npx cap add android
           npx cap sync android
 
       - name: Build APK
