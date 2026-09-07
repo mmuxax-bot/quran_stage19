@@ -1,1 +1,5 @@
-{"appId":"com.quranhifz.app","appName":"Quran Hifz","webDir":"dist"}
+{
+  "appId": "com.quran.stage19",
+  "appName": "Quran Stage 19",
+  "webDir": "dist"
+}
