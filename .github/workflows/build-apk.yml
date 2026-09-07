@@ -17,9 +17,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: |
-          npm install
-          npm install @capacitor/core @capacitor/cli @capacitor/android
+        run: npm install
 
       - name: Build Web Assets
         run: npm run build
@@ -30,10 +28,8 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Add Android & Sync
-        run: |
-          npx cap add android || true
-          npx cap sync android
+      - name: Sync Capacitor
+        run: npx cap sync android
 
       - name: Build APK
         run: |
